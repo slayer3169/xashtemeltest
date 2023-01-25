@@ -18,7 +18,7 @@ jobs:
     # Update references
     - name: Update Etc
       run: |
-        sudo apt install lib32ncurses
+        sudo apt install lib32ncurses5
         sudo apt install libstdc++
         sudo apt install build-essential
         sudo chmod +x xash3d
