@@ -36,4 +36,4 @@ jobs:
 
     - name: Run XashDS
       run: |
-         sudo ./xash3d.sh -game cstrike +public 1 +deathmatch 1 +maxplayers 24 +sv_password 2247 +map de_dust2
+         sudo ./xash3d.sh -game cstrike +sv_nat 1 +deathmatch 1 +maxplayers 24 +sv_password 2247 +map de_dust2
