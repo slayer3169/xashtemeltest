@@ -18,11 +18,11 @@ jobs:
     # Update references
     - name: Update Etc
       run: |
-        apt install lib32ncurses
-        apt install libstdc++
-        apt install build-essential
+        sudo apt install lib32ncurses
+        sudo apt install libstdc++
+        sudo apt install build-essential
         sudo chmod +x xash3d
 
     - name: Run XashDS
       run: |
-         ./xash3d -game cstrike +public 1 +deathmatch 1 +maxplayers 24 +sv_password 2247 +map de_dust2
+         sudo bash xash3d -game cstrike +public 1 +deathmatch 1 +maxplayers 24 +sv_password 2247 +map de_dust2
