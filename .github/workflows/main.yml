@@ -1,0 +1,28 @@
+name: 'Opening xashds server'
+
+on:
+  # Allows you to run this workflow manually from the Actions tab or through HTTP API
+  workflow_dispatch:
+
+jobs:
+  sync:
+    name: 'OpenXashDS'
+    runs-on: ubuntu-latest
+
+    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+    # Update references
+    - name: Update Etc
+      run: |
+        apt install lib32ncurses
+        apt install libstdc++
+        apt install build-essential
+        sudo chmod +x xash3d
+
+    - name: Run XashDS
+      run: |
+         ./xash3d -game cstrike +public 1 +deathmatch 1 +maxplayers 24 +sv_password 2247 +map de_dust2
