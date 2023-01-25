@@ -9,9 +9,9 @@ version		1.6
 size		184000000
 url_info		"www.counter-strike.net"
 type		"Multiplayer"
-dllpath		"cl_dlls"
+dllpath		"dlls"
 gamedll		"dlls/hl.dll"
-gamedll_linux		"addons/metamod/dlls/metamod.so"
+gamedll_linux		"dlls/cs.so"
 gamedll_osx		"dlls/hl.dylib"
 icon		"game.ico"
 gamemode		"multiplayer_only"
